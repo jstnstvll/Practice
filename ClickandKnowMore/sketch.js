@@ -11,7 +11,7 @@ Bree = loadFont('BreeSerif-Regular.ttf');
 function setup() {
 createCanvas(2700, 2150);
 background(140);
-
+img = loadImage("Arrows-curved-arrow-clipart-2.png");
 ellipse(750, 350, 200, 200);
 fill(0, random(0,255), 0);
 
@@ -19,23 +19,27 @@ fill(0, random(0,255), 0);
 button = createImg('AI.png');
 button.position(950, 300);
 button.mousePressed(ChangePage);
-button2 = createButton('Background');
-button2.style("background-color", color(0,0,0,0));
+button2 = createButton('Back');
+button2.style("Home", color(0,0,0,0));
 button2.style("border", "none");
 button2.style("padding","15px 100px");
-button2.style("text-shadow", "5px 5px #558ABB");
+button2.style("text-size","300%");
 button2.position(1100, 1000);
 button2.size()
-button2.mousePressed(color);
+button2.mousePressed(BackPage);
 }
 function ChangePage() {
   textCount = textCount + 1
+}
+
+function BackPage() {
+  textCount = textCount - 1
 }
 function history() {
 textSize(50);
 //text("Artificial-Intelligence", 700, 350);
 fill(0, 0, 0);
-createCanvas(2700, 2150);
+createCanvas(windowWidth, windowHeight);
 background(140);
 
 }
@@ -77,11 +81,12 @@ function page1() {
   textSize(50);
   text("Artificial-Intelligence", 700, 350);
   fill(0, 0, 0);
-  createCanvas(2700, 2150);
+  createCanvas(windowWidth, windowHeight);
   background(140);
 
 }
 function page3() {
+  background(140);
   textSize(50);
   text("In 1950, Turing published an article, “Computing Machinery and Intelligence,” that discussed the conditions for considering a machine intelligent. He developed what has come to be called the Turing test. The Turing test is that if an A.I can convince a human that they are human it should be considered intelligent. One idea of how to create an A.I which would pass the Turing test, is to have it learn from literature like a child. The term Machine Learning refers to this. One drawback is that it is hard to simulate physical experience.",1600, 100, 1000, 900);
 }
@@ -92,14 +97,15 @@ function color() {
 }
 
 function page4() {
+  background(140);
   textSize(50);
   text("One of the major limitations in defining and measuring intelligence in human and nonhuman species as well as machines is the lack of adequate measurement tools. Most human measurement tools rely on rather basic reading, comprehension, and mathematical problems. For instance, to examine working memory on an IQ test, children must repeat back a list of digits. However, working memory, as a component process of intelligence, is much more complex a process than simply repeating back a series of digits. Thus, there are many types of intelligence that are not measured adequately or that are not measured at all and therefore are unable to make a contribution to the final measure of intelligence.", 10, 100, 1000, 1200);
 
 }
 function page5() {
+  background(140);
   textSize(50);
   text("My interests in artificial intelligenc are the use of artificial intelligence to generate literature, and also how it could be implemented into video games as a step beyond precedural generation which has already been implemented into a few games.", 20, 50, 900, 900);
   text("One example of this would be to use the Rita p5 library which is designed for generative literature to right a story by running sources through two competing A.I.", 20, 1000, 900, 500);
 
 }
-
