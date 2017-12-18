@@ -15,7 +15,7 @@ game = loadImage("nms.jpg");
 ellipse(750, 350, 200, 200);
 fill(0, random(0,255), 0);
 ai = loadImage("ai2");
-turing = loadImage("turing.jpg");
+
 button = createImg('AI.png');
 button.position(1000, 300);
 button.mousePressed(ChangePage);
@@ -96,8 +96,7 @@ function page0() {
 function page3() {
   background(140);
   textSize(50);
-  text("In 1950, Turing published an article, “Computing Machinery and Intelligence,” that discussed the conditions for considering a machine intelligent. He developed what has come to be called the Turing test. The Turing test is that if an A.I can convince a human that they are human it should be considered intelligent. One idea of how to create an A.I which would pass the Turing test, is to have it learn from literature like a child. The term Machine Learning refers to this. One drawback is that it is hard to simulate physical experience.",1700, 100, 1000, 900);
-  image(turing.jpg, 10, 500);
+  text("In 1950, Turing published an article, “Computing Machinery and Intelligence,” that discussed the conditions for considering a machine intelligent. He developed what has come to be called the Turing test. The Turing test is that if an A.I can convince a human that they are human it should be considered intelligent. One idea of how to create an A.I which would pass the Turing test, is to have it learn from literature like a child. The term Machine Learning refers to this. One drawback is that it is hard to simulate physical experience.",100, 100, 1000, 900);
 }
 
 function color() {
