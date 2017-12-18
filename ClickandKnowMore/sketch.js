@@ -11,20 +11,20 @@ Bree = loadFont('BreeSerif-Regular.ttf');
 function setup() {
 createCanvas(2700, 2150);
 background(140);
-img = loadImage("Arrows-curved-arrow-clipart-2.png");
+img = loadImage("nms.jpg");
 ellipse(750, 350, 200, 200);
 fill(0, random(0,255), 0);
 
 
 button = createImg('AI.png');
-button.position(950, 300);
+button.position(1000, 300);
 button.mousePressed(ChangePage);
 button2 = createButton('Back');
 button2.style("Home", color(0,0,0,0));
 button2.style("border", "none");
 button2.style("padding","15px 100px");
 button2.style("text-size","300%");
-button2.position(1100, 1000);
+button2.position(1165, 1000);
 button2.size()
 button2.mousePressed(BackPage);
 }
@@ -46,7 +46,7 @@ background(140);
 
 function draw() {
   background(140);
-
+  //image(img, 1000, 200);
   textSize(80);
   textFont(Bree);
   fill(0, 0, 0);
@@ -85,6 +85,14 @@ function page1() {
   background(140);
 
 }
+function page0() {
+  textSize(50);
+  text("Artificial-Intelligence", 700, 350);
+  fill(0, 0, 0);
+  createCanvas(windowWidth, windowHeight);
+  background(140);
+
+}
 function page3() {
   background(140);
   textSize(50);
@@ -106,6 +114,7 @@ function page5() {
   background(140);
   textSize(50);
   text("My interests in artificial intelligenc are the use of artificial intelligence to generate literature, and also how it could be implemented into video games as a step beyond precedural generation which has already been implemented into a few games.", 20, 50, 900, 900);
+  image(img, 10, 500);
   text("One example of this would be to use the Rita p5 library which is designed for generative literature to right a story by running sources through two competing A.I.", 20, 1000, 900, 500);
 
 }
