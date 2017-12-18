@@ -11,7 +11,7 @@ Bree = loadFont('BreeSerif-Regular.ttf');
 function setup() {
 createCanvas(2700, 2150);
 background(140);
-img = loadImage("nms.jpg");
+game = loadImage("nms.jpg");
 ellipse(750, 350, 200, 200);
 fill(0, random(0,255), 0);
 
@@ -114,7 +114,7 @@ function page5() {
   background(140);
   textSize(50);
   text("My interests in artificial intelligenc are the use of artificial intelligence to generate literature, and also how it could be implemented into video games as a step beyond precedural generation which has already been implemented into a few games.", 20, 50, 900, 900);
-  image(img, 10, 500);
+  image(game, 10, 500);
   text("One example of this would be to use the Rita p5 library which is designed for generative literature to right a story by running sources through two competing A.I.", 20, 1000, 900, 500);
 
 }
